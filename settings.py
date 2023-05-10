@@ -1,0 +1,8 @@
+import math
+
+DOOM_RES = DOOMW_W, DOOM_H = 320, 200
+
+SCALE = 5.0
+
+WIN_RES = WIDTH, HEIGHT = int(DOOMW_W * SCALE), int(DOOM_H * SCALE)
+H_WIDTH, H_HEIGHT = WIDTH // 2, HEIGHT // 2

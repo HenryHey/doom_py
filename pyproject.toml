@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "py-doom"
+version = "0.1.0"
+description = ""
+authors = ["Enric Masdeu"]
+readme = "README.md"
+packages = [{include = "py_doom"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+isort = "^5.12.0"
+pygame = "^2.4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.2.0"
+ruff = "^0.0.265"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.isort]
+py_version = 310
+profile = "black"
+line_length = 120
+atomic = true
+multi_line_output = 3
+default_section = 'THIRDPARTY'
+include_trailing_comma = true
+use_parentheses = true
+combine_as_imports = true
+lines_between_types = 1
